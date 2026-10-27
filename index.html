@@ -4,11 +4,56 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
     <body>
-        <p class="text-danger mt-1">Michael Bednarik</p>
-        <img width="500px" src="https://elearning.tgm.ac.at/pluginfile.php/1/theme_boost_union/logocompact/1/1789128765/tgm_logo.svg">
-        <a class="btn btn-primary btn-lg" href="https://elearning.tgm.ac.at">TGM</a>
-        <button class="btn btn-outline-primary btn-sm">Drück Mich</button>
+        <div class="container mt-3 fs-4">
+            <row class="row mb-3">
+                <div class="col-1">
+                    <label for="green" class="form-label">Betreff</label>
+                </div>
+                <div class="col-11">
+                    <input type="text" id="green" class="form-control bg-success rounded-0 border border-3 border-black">
 
+                </div>
+            </row>
+            <row class="row mb-3">
+                <div class="col-1">
+                    <label for="blue" class="form-label">Name</label>
+                </div>
+                <div class="col-11">
+                    <input type="text" id="blue" class="form-control bg-primary rounded-0 border border-3 border-black">
+
+                </div>
+            </row>
+
+            <row class="row mb-3">
+                <div class="col-1">
+                    <label for="red" class="form-label">Anliegen</label>
+                </div>
+                <div class="col-6">
+                    <textarea rows="5" id="red" class="form-control bg-danger rounded-0 border border-3 border-black"></textarea>
+                </div>
+        
+                <div class="col-5">
+                    
+                    <div class="bg-warning border border-3 border-black h-50 d-flex align-items-center">
+                        <label for="checkbox" class="form-check-label visually-hidden fs-2"></label>
+                        <input id="checkbox" class="form-check-input m-3" type="checkbox">ich wünsche eine Antwort
+                    </div>
+                </div>
+            </row>
+            <row class="row mb-3">
+                <div class="col-1">
+                    <label for="senden" class="form-label visually-hidden"></label>
+                    <button id="senden" type="button" class="btn border border-black rounded-0 shadow-lg">Senden</button>
+                </div>
+                <div class="col-10"></div>
+                <div class="col-1">
+                    <label for="reset" class="form-label visually-hidden"></label>
+                    <button id="reset" type="reset" class="btn border border-black rounded-0 shadow-lg">Reset</button>
+                </div>
+            </row>
+        
+        </div>
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
 </html>
